@@ -51,4 +51,4 @@ def delete(user_id):
     success = delete_user(user_id)
     if not success:
         return jsonify({"error": "user not found"}), 404
-    return jsonify({"result": True})
+    return "", 204
